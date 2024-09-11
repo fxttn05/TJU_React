@@ -1,0 +1,27 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color: #55CCD3;
+    --secondary-color: #2C696D;
+    --navbar-color: #E3E3E3;
+    --color-text: #231942;
+    --navbar-color: #ffffff;
+    --navbar-color-text: #000000;
+}
+
+/* Navbar Component */
+
+.background{
+    background-color: var(--primary-color); /* fallback for old browsers */
+    background-color: -webkit-linear-gradient(to bottom, var(--primary-color), var(--secondary-color)); /* Chrome 10-25, Safari 5.1-6 */
+    background-color: linear-gradient(to bottom, var(--primary-color), var(--secondary-color)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100px;
+}
+
+.background .navbar {
+    background-color: var(--navbar-color);
+    
+}
+
