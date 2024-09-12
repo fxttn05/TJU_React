@@ -9,6 +9,7 @@
     --color-text: #F8F8F8;
     --hover-color-text: ;
     --navbar-color-text: #000000;
+    --background-color: #CACACA;
 }
 
 /* Navbar Component */
@@ -24,7 +25,7 @@
     background-color: var(--navbar-color);
     width: 100%;
     z-index: 9999;
-    position: fixed;
+    position: absolute;
 }
 
 .navbar .navbar-brand {
@@ -55,4 +56,17 @@
     .navbar .navbar-brand img {
         width: 50px;
     }
+}
+@media screen and (max-width: 1200px){
+    .navbar .nav-link a   {
+        font-size: xx-small;
+    }
+}
+
+/* homepage */
+
+.homepage header {
+    background-color: var(--background-color) ;
+    background-image:  url("../../assets/Vector 2.png"), url("../../assets/Vector1.png");
+    background-size: 100% 100%;
 }
