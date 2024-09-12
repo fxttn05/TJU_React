@@ -5,23 +5,54 @@
 :root {
     --primary-color: #55CCD3;
     --secondary-color: #2C696D;
-    --navbar-color: #E3E3E3;
-    --color-text: #231942;
     --navbar-color: #ffffff;
+    --color-text: #F8F8F8;
+    --hover-color-text: ;
     --navbar-color-text: #000000;
 }
 
 /* Navbar Component */
 
 .background{
-    background-color: var(--primary-color); /* fallback for old browsers */
-    background-color: -webkit-linear-gradient(to bottom, var(--primary-color), var(--secondary-color)); /* Chrome 10-25, Safari 5.1-6 */
-    background-color: linear-gradient(to bottom, var(--primary-color), var(--secondary-color)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 100px;
+    background-color: #55CCD3; /* fallback for old browsers */
+    background-color: -webkit-linear-gradient(to left, #55CCD3, #2C696D); /* Chrome 10-25, Safari 5.1-6 */
+    background-color: linear-gradient(to bottom, #55CCD3, #2C696D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-top: 5vh;
 }
 
-.background .navbar {
+.navbar {
     background-color: var(--navbar-color);
-    
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
 }
 
+.navbar .navbar-brand {
+    justify-content: center;
+}
+
+.navbar .navbar-brand img {
+    max-width: 80px;
+    margin-top: -30px;
+}
+
+.navbar .navbar-brand p{
+    background: -webkit-linear-gradient(360deg, #55CCD3 0%, #2C696D 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.navbar .nav-link{
+    background: var(--primary-color); 
+}
+
+.navbar .nav-link a {
+    color: var(--navbar-color);
+}
+
+@media screen and (max-width: 992px){
+    .navbar .navbar-brand img {
+        width: 50px;
+    }
+}

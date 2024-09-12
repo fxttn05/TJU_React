@@ -1,18 +1,23 @@
 import { Navbar, Container, Nav, Row, Col } from "react-bootstrap"
+import Icon from "../assets/TJU.png"
 
 const NavbarComponent = () => {
   return (
       <div className="background">
-        <Navbar expand="lg">
+        <Navbar expand="lg" className="bg-body-tertiary align-items-center">
           <Container>
-            <Navbar.Brand href="/" className='fs-3 fw-bold'>AyoNgoding</Navbar.Brand>
+            <Navbar.Brand href="/" className=' d-flex gap-3 align-items-center'>
+              <img src={Icon} alt="Icon Tangkal Jati Utama" />
+              <p className="fw-bold">Tangkal Jati Utama</p>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-            </Nav>
+            <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+              <Nav className="px-2 gap-lg-5 nav-link text-white rounded-3">
+                <Nav.Link href="#Aboutus">About Us</Nav.Link>
+                <Nav.Link href="#Businesssector">Business Sector</Nav.Link>
+                <Nav.Link href="#Summary">Summary</Nav.Link>
+                <Nav.Link href="#Contactus">Contact Us</Nav.Link>
+              </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
