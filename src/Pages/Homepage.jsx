@@ -35,6 +35,27 @@ const Homepage = () => {
           </Row>
         </Container>
       </div>
+      <div className="w-100 min-vh-100" id="Mission">
+        <Container>
+          <Row>
+            <h1 className="title mb-2 text-uppercase">Mission</h1>
+            <ul className="text-white fw-bold">
+              <li>Maintaining intensive communication along with valuable business partners to increase business acceleration and create a long term mutual business relationship.</li>
+              <li>Conducting a continuous program of Research, Design And Development program to create a sustainable business concept.</li>
+              <li>Continuously developing original design products.</li>
+              <li>Exploring and maximizing the use of new knowledge, design and construction method.</li>
+              <li>Managing the human resources professionally.</li>
+            </ul>
+          </Row>
+          <Row>
+            <h1 className="title mb-2 text-uppercase">Vision</h1>
+            <ul className="text-white fw-bold">
+              <li>Being the leading role in Engineering, Procurement And Construction Company which combining Indonesian selected workmanship, clients, legals and with a continuous Research of Construction method, Design & Development program.</li>
+              <li>Bringing the excellence of Indonesian workmanship to win the global competition in EPC industry.</li>
+            </ul>
+          </Row>
+        </Container>
+      </div>
     </div>
   )
 }
