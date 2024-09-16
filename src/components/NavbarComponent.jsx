@@ -1,5 +1,6 @@
 import { Navbar, Container, Nav, Row, Col } from "react-bootstrap"
 import Icon from "../assets/TJU.png"
+import { NavLink } from 'react-router-dom';
 
 const NavbarComponent = () => {
   return (
@@ -14,9 +15,9 @@ const NavbarComponent = () => {
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
               <Nav className="px-4 gap-lg-5 nav-link text-white rounded-3 fw-bold">
                 <Nav.Link href="#Aboutus">About Us</Nav.Link>
-                <Nav.Link href="#Businesssector">Business Sector</Nav.Link>
-                <Nav.Link href="#Summary">Summary</Nav.Link>
-                <Nav.Link href="#Contactus">Contact Us</Nav.Link>
+                <Nav.Link href="#Aboutus">Business Sector</Nav.Link>
+                <Nav.Link href="#Aboutus">Summary</Nav.Link>
+                <Nav.Link href="#Aboutus">Contact Us</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
