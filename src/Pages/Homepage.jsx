@@ -9,6 +9,24 @@ import frame4 from "../assets/bussec/Frame 4.png"
 import frame5 from "../assets/bussec/Frame 5.png"
 import frame6 from "../assets/bussec/Frame 6.png"
 
+import Qr1 from "../assets/summary/Qr1.png"
+import Qr2 from "../assets/summary/Qr2.png"
+import Qr3 from "../assets/summary/Qr3.png"
+import Qr4 from "../assets/summary/Qr4.png"
+import Qr5 from "../assets/summary/Qr5.png"
+
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+// import required modules
+import { Pagination, Navigation } from 'swiper/modules';
+
 const Homepage = () => {
   return (
     <div className="homepage">
@@ -109,6 +127,82 @@ const Homepage = () => {
             </Col>
           </Row>
         </Container>
+      </div>
+
+      {/* summary */}
+      <div className="w-100 min-vh-100" id="Summary">
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={5}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide className="slide1">
+            <Container>
+              <Row>
+                <h1 className="text-white fw-bold">Rehabilitation of the heritage fort <br/> Van Den Bosch area</h1>
+                <p className="text-white fw-semibold mt-3">Ngawi, Jawa Barat</p>
+              </Row>
+              <Row>
+                <img className="Qr" src={Qr1} alt="" />
+                <p className="text-white fw-semibold mt-3">Scan to see more info about this project.</p>
+              </Row>
+            </Container>
+          </SwiperSlide>
+          <SwiperSlide className="slide2">
+            <Container>
+              <Row>
+                <h1 className="text-white fw-bold">Building Renovation</h1>
+                <p className="text-white fw-semibold mt-3">PLBN, Kalimantan Barat</p>
+              </Row>
+              <Row>
+                <img className="Qr" src={Qr2} alt="" />
+                <p className="text-white fw-semibold mt-3">Scan to see more info about this project.</p>
+              </Row>
+            </Container>
+          </SwiperSlide>
+          <SwiperSlide className="slide3">
+            <Container>
+              <Row>
+                <h1 className="text-white fw-bold">Building Renovation</h1>
+                <p className="text-white fw-semibold mt-3">RSUD Pondok betung, Tangerang selatan</p>
+              </Row>
+              <Row>
+                <img className="Qr" src={Qr3} alt="" />
+                <p className="text-white fw-semibold mt-3">Scan to see more info about this project.</p>
+              </Row>
+            </Container>
+          </SwiperSlide>
+          <SwiperSlide className="slide4">
+            <Container>
+              <Row>
+                <h1 className="text-white fw-bold">Villa Construction</h1>
+                <p className="text-white fw-semibold mt-3">Villa Tapos, Bogor</p>
+              </Row>
+              <Row>
+                <img className="Qr" src={Qr4} alt="" />
+                <p className="text-white fw-semibold mt-3">Scan to see more info about this project.</p>
+              </Row>
+            </Container>
+          </SwiperSlide>
+          <SwiperSlide className="slide5">
+            <Container>
+              <Row>
+                <h1 className="text-white fw-bold">Building Renovation</h1>
+                <p className="text-white fw-semibold mt-3">Museum Nasional, Jakarta</p>
+              </Row>
+              <Row>
+                <img className="Qr" src={Qr5} alt="" />
+                <p className="text-white fw-semibold mt-3">Scan to see more info about this project.</p>
+              </Row>
+            </Container>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   )
