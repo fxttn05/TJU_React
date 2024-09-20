@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap"
-import Icon from "../assets/TJU-white.png"
+import Icon from "../assets/TJU-white.webp"
 
 
 const FooterComponent = () => {

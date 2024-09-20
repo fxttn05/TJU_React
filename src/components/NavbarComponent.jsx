@@ -1,6 +1,6 @@
 import { Navbar, Container, Nav, Row, Col } from "react-bootstrap"
 import { useState, useEffect } from 'react';
-import Icon from "../assets/TJU.png"
+import Icon from "../assets/TJU.webp"
 import { NavLink } from 'react-router-dom';
 
 const NavbarComponent = () => {

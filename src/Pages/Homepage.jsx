@@ -1,19 +1,19 @@
 import { Container, Row, Col } from "react-bootstrap"
 
-import HeroImage from "../assets/tju-logo1.png"
+import HeroImage from "../assets/tju-logo1.webp"
 
-import frame1 from "../assets/bussec/Frame 1.png"
-import frame2 from "../assets/bussec/Frame 2.png"
-import frame3 from "../assets/bussec/Frame 3.png"
-import frame4 from "../assets/bussec/Frame 4.png"
-import frame5 from "../assets/bussec/Frame 5.png"
-import frame6 from "../assets/bussec/Frame 6.png"
+import frame1 from "../assets/bussec/Frame 1.webp"
+import frame2 from "../assets/bussec/Frame 2.webp"
+import frame3 from "../assets/bussec/Frame 3.webp"
+import frame4 from "../assets/bussec/Frame 4.webp"
+import frame5 from "../assets/bussec/Frame 5.webp"
+import frame6 from "../assets/bussec/Frame 6.webp"
 
-import Qr1 from "../assets/summary/Qr1.png"
-import Qr2 from "../assets/summary/Qr2.png"
-import Qr3 from "../assets/summary/Qr3.png"
-import Qr4 from "../assets/summary/Qr4.png"
-import Qr5 from "../assets/summary/Qr5.png"
+import Qr1 from "../assets/summary/Qr1.webp"
+import Qr2 from "../assets/summary/Qr2.webp"
+import Qr3 from "../assets/summary/Qr3.webp"
+import Qr4 from "../assets/summary/Qr4.webp"
+import Qr5 from "../assets/summary/Qr5.webp"
 
 import React, { useRef, useState } from 'react';
 // Import Swiper React components

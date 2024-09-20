@@ -117,7 +117,7 @@
 
 .homepage header {
     background-color: var(--background-color) ;
-    background-image:  url("../../assets/Vector 2.png"), url("../../assets/Vector1.png");
+    background-image:  url("../../assets/Vector 2.webp"), url("../../assets/Vector1.webp");
     background-size: 100% 100%;
     max-height: 95vh;
 }
@@ -176,7 +176,7 @@
 /* aboutus */
 
 .homepage #Aboutus{
-    background-image:  url("../../assets/WP1.png");
+    background-image:  url("../../assets/WP1.webp");
     background-size: 100% auto;
     padding: 15vh 0 5vh 0;
 }
@@ -196,7 +196,7 @@
 
 @media screen and (max-width: 992px){
     .homepage #Aboutus{
-        background-image:  url("../../assets/WP1.png");
+        background-image:  url("../../assets/WP1.webp");
         background-size: auto;
         padding: 15vh 5vw 8vh 5vw;
     }
@@ -232,7 +232,7 @@
 /* mission vision */
 
 .homepage #Mission{
-    background-image:  url("../../assets/WP2.png");
+    background-image:  url("../../assets/WP2.webp");
     background-size: cover;
     padding: 15vh 0 5vh 0;
 }
@@ -282,7 +282,7 @@
 
 @media screen and (max-width: 992px){
     .homepage #Mission{
-        background-image:  url("../../assets/WP2.png");
+        background-image:  url("../../assets/WP2.webp");
         background-size: cover;
         padding: 15vh 5vw 8vh 1vw;
     }
@@ -334,7 +334,7 @@
 /* Business Sector */
 
 .homepage #Bussec {
-    background-image:  url("../../assets/WP1.png");
+    background-image:  url("../../assets/WP1.webp");
     background-size: 100% auto;
     padding: 15vh 0 8vh 0;
 }
@@ -354,7 +354,7 @@
 
 @media screen and (max-width: 992px){
     .homepage #Bussec {
-        background-image:  url("../../assets/WP1.png");
+        background-image:  url("../../assets/WP1.webp");
         background-size: auto;
         padding: 15vh 4vw 8vh 4vw;
     }
@@ -402,23 +402,23 @@
 }
 
 .swiper-slide.slide1{
-    background-image: url("../../assets/summary/Slide1.png");
+    background-image: url("../../assets/summary/Slide1.webp");
     background-size: cover;
 }
 .swiper-slide.slide2{
-    background-image: url("../../assets/summary/Slide2.png");
+    background-image: url("../../assets/summary/Slide2.webp");
     background-size: cover;
 }
 .swiper-slide.slide3{
-    background-image: url("../../assets/summary/Slide3.png");
+    background-image: url("../../assets/summary/Slide3.webp");
     background-size: cover;
 }
 .swiper-slide.slide4{
-    background-image: url("../../assets/summary/Slide4.png");
+    background-image: url("../../assets/summary/Slide4.webp");
     background-size: cover;
 }
 .swiper-slide.slide5{
-    background-image: url("../../assets/summary/Slide5.png");
+    background-image: url("../../assets/summary/Slide5.webp");
     background-size: cover;
 }
 
