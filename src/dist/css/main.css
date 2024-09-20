@@ -335,7 +335,7 @@
 
 .homepage #Bussec {
     background-image:  url("../../assets/WP1.webp");
-    background-size: 100% auto;
+    background-size: cover;
     padding: 15vh 0 8vh 0;
 }
 
@@ -355,7 +355,7 @@
 @media screen and (max-width: 992px){
     .homepage #Bussec {
         background-image:  url("../../assets/WP1.webp");
-        background-size: auto;
+        background-size: cover;
         padding: 15vh 4vw 8vh 4vw;
     }
 
