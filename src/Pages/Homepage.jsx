@@ -28,6 +28,12 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Homepage = () => {
+  const progressCircle = useRef(null);
+  const progressContent = useRef(null);
+  const onAutoplayTimeLeft = (s, time, progress) => {
+    progressCircle.current.style.setProperty('--progress', 1 - progress);
+    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+  };
   return (
     <div className="homepage">
 
@@ -132,19 +138,20 @@ const Homepage = () => {
       {/* summary */}
       <div className="w-100" id="Summary">
         <Swiper
+          spaceBetween={5}
+          slidesPerView={1}
+          loop={true}
           centeredSlides={true}
           autoplay={{
-            delay: 3000,
+            delay: 10000,
             disableOnInteraction: false,
           }}
-          modules={[Autoplay, Pagination, Navigation]}
-          slidesPerView={1}
-          spaceBetween={5}
-          loop={true}
           pagination={{
             clickable: true,
           }}
           navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          onAutoplayTimeLeft={onAutoplayTimeLeft}
           className="mySwiper"
         >
           <SwiperSlide className="slide1">
@@ -207,6 +214,12 @@ const Homepage = () => {
               </Row>
             </Container>
           </SwiperSlide>
+          <div className="autoplay-progress" slot="container-end">
+            <svg viewBox="0 0 48 48" ref={progressCircle}>
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span ref={progressContent}></span>
+          </div>
         </Swiper>
       </div>
     </div>
