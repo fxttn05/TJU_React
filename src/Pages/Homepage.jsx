@@ -25,7 +25,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // import required modules
-import { Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Homepage = () => {
   return (
@@ -130,8 +130,14 @@ const Homepage = () => {
       </div>
 
       {/* summary */}
-      <div className="w-100 min-vh-100" id="Summary">
+      <div className="w-100" id="Summary">
         <Swiper
+          centeredSlides={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, Pagination, Navigation]}
           slidesPerView={1}
           spaceBetween={5}
           loop={true}
@@ -139,16 +145,15 @@ const Homepage = () => {
             clickable: true,
           }}
           navigation={true}
-          modules={[Pagination, Navigation]}
           className="mySwiper"
         >
           <SwiperSlide className="slide1">
             <Container>
               <Row>
                 <h1 className="text-white fw-bold">Rehabilitation of the heritage fort <br/> Van Den Bosch area</h1>
-                <p className="text-white fw-semibold mt-3">Ngawi, Jawa Barat</p>
+                <p className="text-white fw-semibold">Ngawi, Jawa Barat</p>
               </Row>
-              <Row>
+              <Row className="mt-3">
                 <img className="Qr" src={Qr1} alt="" />
                 <p className="text-white fw-semibold mt-3">Scan to see more info about this project.</p>
               </Row>
@@ -158,9 +163,9 @@ const Homepage = () => {
             <Container>
               <Row>
                 <h1 className="text-white fw-bold">Building Renovation</h1>
-                <p className="text-white fw-semibold mt-3">PLBN, Kalimantan Barat</p>
+                <p className="text-white fw-semibold">PLBN, Kalimantan Barat</p>
               </Row>
-              <Row>
+              <Row className="mt-3">
                 <img className="Qr" src={Qr2} alt="" />
                 <p className="text-white fw-semibold mt-3">Scan to see more info about this project.</p>
               </Row>
@@ -170,9 +175,9 @@ const Homepage = () => {
             <Container>
               <Row>
                 <h1 className="text-white fw-bold">Building Renovation</h1>
-                <p className="text-white fw-semibold mt-3">RSUD Pondok betung, Tangerang selatan</p>
+                <p className="text-white fw-semibold">RSUD Pondok betung, Tangerang selatan</p>
               </Row>
-              <Row>
+              <Row className="mt-3">
                 <img className="Qr" src={Qr3} alt="" />
                 <p className="text-white fw-semibold mt-3">Scan to see more info about this project.</p>
               </Row>
@@ -182,9 +187,9 @@ const Homepage = () => {
             <Container>
               <Row>
                 <h1 className="text-white fw-bold">Villa Construction</h1>
-                <p className="text-white fw-semibold mt-3">Villa Tapos, Bogor</p>
+                <p className="text-white fw-semibold">Villa Tapos, Bogor</p>
               </Row>
-              <Row>
+              <Row className="mt-3">
                 <img className="Qr" src={Qr4} alt="" />
                 <p className="text-white fw-semibold mt-3">Scan to see more info about this project.</p>
               </Row>
@@ -194,9 +199,9 @@ const Homepage = () => {
             <Container>
               <Row>
                 <h1 className="text-white fw-bold">Building Renovation</h1>
-                <p className="text-white fw-semibold mt-3">Museum Nasional, Jakarta</p>
+                <p className="text-white fw-semibold">Museum Nasional, Jakarta</p>
               </Row>
-              <Row>
+              <Row className="mt-3">
                 <img className="Qr" src={Qr5} alt="" />
                 <p className="text-white fw-semibold mt-3">Scan to see more info about this project.</p>
               </Row>

@@ -82,6 +82,15 @@
 }
 
 @media screen and (max-width: 992px){
+    .navbar.color-active {
+        background-color: var(--navbar-color);
+        width: 100%;
+        z-index: 9999;
+        position: fixed;
+        margin-top: -5vh;
+        height: 6rem;
+    }
+
     .navbar .navbar-brand img {
         width: 50px;
         margin-top: -20px;
@@ -123,7 +132,7 @@
     }
 
     .homepage header .herotext{
-        margin: 10vh 0 4vh 0;
+        margin: 14vh 0 4vh 0;
         line-height: 1.5;
         text-shadow: 2px 2px 10px black;
         font-size: 0.55rem;
@@ -177,7 +186,7 @@
     font-weight: bolder;
     text-shadow: 2px 2px 10px black;
     font-size: 3.5rem;
-    margin-left: -3rem;
+    margin-left: -2rem;
 }
 
 .homepage #Aboutus p{
@@ -189,7 +198,7 @@
     .homepage #Aboutus{
         background-image:  url("../../assets/WP1.png");
         background-size: auto;
-        padding: 15vh 0 8vh 0;
+        padding: 15vh 5vw 8vh 5vw;
     }
 
     .homepage #Aboutus h1{
@@ -197,6 +206,12 @@
         font-weight: bolder;
         text-shadow: 2px 2px 10px black;
         font-size: 2.5rem;
+        margin-left: 0rem;
+    }
+
+    .homepage #Aboutus p{
+        text-shadow: 2px 2px 10px black;
+        font-size: 14px;
     }
 }
 
@@ -218,7 +233,7 @@
 
 .homepage #Mission{
     background-image:  url("../../assets/WP2.png");
-    background-size: 100% auto;
+    background-size: cover;
     padding: 15vh 0 5vh 0;
 }
 
@@ -241,7 +256,7 @@
 }
 
 .homepage #Mission .row:nth-child(1) li::marker{
-    color: var(--secondary-color);
+    color: red;
 }
 
 .homepage #Mission .row:nth-child(2){
@@ -262,14 +277,14 @@
 }
 
 .homepage #Mission .row:nth-child(2) li::marker{
-    color: var(--secondary-color);
+    color: red;
 }
 
 @media screen and (max-width: 992px){
     .homepage #Mission{
         background-image:  url("../../assets/WP2.png");
-        background-size: auto;
-        padding: 15vh 0 8vh 0;
+        background-size: cover;
+        padding: 15vh 5vw 8vh 1vw;
     }
 
     .homepage #Mission .row:nth-child(1){
@@ -329,18 +344,31 @@
     font-weight: bolder;
     text-shadow: 2px 2px 10px black;
     font-size: 3.5rem;
-    margin-left: -3rem;
+    margin-left: -2rem;
 }
 
 .homepage #Bussec .row:nth-child(2) img {
-    width: 12rem;
+    width: 20rem;
+    padding: 20px;
 }
 
 @media screen and (max-width: 992px){
     .homepage #Bussec {
         background-image:  url("../../assets/WP1.png");
         background-size: auto;
-        padding: 15vh 0 8vh 0;
+        padding: 15vh 4vw 8vh 4vw;
+    }
+
+    .homepage #Bussec h1{
+        color: var(--primary-color);
+        font-weight: bolder;
+        text-shadow: 2px 2px 10px black;
+        font-size: 2.5rem;
+        margin-left: 0rem;
+    }
+
+    .homepage #Bussec .row:nth-child(2) img {
+        width: 15rem;
     }
 }
 
@@ -353,15 +381,20 @@
 }
 
 .swiper-slide{
-    padding: 25vh 0 8vh 0;
+    padding: 20vh 2vw ;
+    height: 40rem;
 }
 
 .swiper-slide h1{
     font-size: 3rem;
 }
 
+.swiper-slide .container {
+    height: 80%;
+}
+
 .swiper-slide .row:nth-child(2){
-    margin-top: 15rem;
+    margin-top: auto;   
 }
 
 .swiper-slide .Qr{
@@ -387,4 +420,70 @@
 .swiper-slide.slide5{
     background-image: url("../../assets/summary/Slide5.png");
     background-size: cover;
+}
+
+@media screen and (max-width: 992px){
+    .swiper-slide{
+        padding: 15vh 15vw ;
+    }
+
+    .swiper-slide h1{
+        font-size: 2rem;
+    }
+}
+
+/* Footer */
+
+.footer {
+    min-height: 30vh;
+    padding: 10vh 0 5vh 0;
+
+    background: rgb(85,204,211);
+    background: linear-gradient(90deg, rgba(85,204,211,1) 0%, rgba(44,105,109,1) 100%); 
+}
+
+.footer .row .col:nth-child(1) .sub-title{
+    background-color: white;
+    padding: 0 0.8rem 0 0.8rem;
+    width: fit-content;
+}
+
+.footer .row .col:nth-child(1) .sub-title p{
+    background: -webkit-linear-gradient(360deg, #55CCD3 0%, #2C696D 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.footer .row .col:nth-child(1) .brand .item{
+    padding: 10px 13px;
+}
+
+.footer .row .col:nth-child(1) .brand .item i {
+    color: var(--primary-color);
+}
+
+.footer .row .col:nth-child(2) p {
+    text-shadow: 2px 2px 5px grey;
+}
+
+.footer .row .col:nth-child(2) ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-shadow: 2px 2px 10px grey;
+}
+
+.footer .row .col:nth-child(2) ul li a{
+    text-decoration: none;
+}
+
+.footer .row .col:nth-child(3) ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-shadow: 2px 2px 10px grey;
 }

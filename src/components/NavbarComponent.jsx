@@ -32,8 +32,8 @@ const NavbarComponent = () => {
               <Nav className="px-4 gap-lg-5 nav-link text-white rounded-3 fw-bold mt-2 mt-md-0">
                 <Nav.Link href="#Aboutus">About Us</Nav.Link>
                 <Nav.Link href="#Bussec">Business Sector</Nav.Link>
-                <Nav.Link href="#Aboutus">Summary</Nav.Link>
-                <Nav.Link href="#Aboutus">Contact Us</Nav.Link>
+                <Nav.Link href="#Summary">Summary</Nav.Link>
+                <Nav.Link href="#Footer">Contact Us</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
